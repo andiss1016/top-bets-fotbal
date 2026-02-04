@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ponturi Pariuri | Biletul Zilei</title>
+    <title>Ponturi Pariuri | Proiect Tipster</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f4f4f9;
+            background-color: #f0f2f5;
             margin: 0;
             padding: 0;
             display: flex;
@@ -18,66 +18,87 @@
             background-color: #e21a1a;
             color: white;
             width: 100%;
-            padding: 20px 0;
+            padding: 25px 0;
             text-align: center;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
         }
         .container {
             max-width: 500px;
-            width: 90%;
-            margin-top: 30px;
+            width: 92%;
+            margin-top: 20px;
         }
         .bet-card {
             background: white;
             border-radius: 15px;
-            padding: 20px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            border-top: 5px solid #e21a1a;
+            padding: 25px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            border-top: 6px solid #e21a1a;
+            margin-bottom: 20px;
         }
         .bet-header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            border-bottom: 1px solid #eee;
-            padding-bottom: 10px;
-            margin-bottom: 15px;
+            border-bottom: 2px solid #f8f8f8;
+            padding-bottom: 15px;
+            margin-bottom: 20px;
         }
         .bet-tag {
             background: #e21a1a;
             color: white;
-            padding: 5px 10px;
-            border-radius: 5px;
+            padding: 6px 12px;
+            border-radius: 8px;
             font-weight: bold;
             font-size: 14px;
         }
-        .date { color: #666; font-size: 14px; }
-        .match-row {
-            padding: 10px 0;
-            border-bottom: 1px dashed #ddd;
-        }
-        .match-name { font-weight: bold; color: #333; }
-        .prediction { color: #e21a1a; font-weight: bold; margin-top: 5px; }
-        .btn-superbet {
+        .date { color: #888; font-size: 14px; font-weight: 500; }
+        
+        .section-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 15px;
             display: block;
-            background-color: #ffc107;
-            color: #000;
-            text-align: center;
+        }
+
+        /* Butoane */
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
             padding: 15px;
-            margin-top: 20px;
+            margin-bottom: 12px;
             text-decoration: none;
             font-weight: bold;
-            border-radius: 8px;
-            transition: background 0.3s;
+            border-radius: 10px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            font-size: 16px;
         }
-        .btn-superbet:hover {
-            background-color: #e0ac08;
+        .btn:active { transform: scale(0.98); }
+
+        .btn-superbet {
+            background-color: #ffc107;
+            color: #000;
         }
+        .btn-profile {
+            background-color: #000;
+            color: #fff;
+        }
+        .btn-telegram {
+            background-color: #0088cc;
+            color: white;
+            margin-top: 10px;
+        }
+        
+        .emoji { margin-right: 10px; font-size: 20px; }
+
         footer {
-            margin-top: 40px;
+            margin-top: auto;
             font-size: 12px;
-            color: #888;
+            color: #999;
             text-align: center;
-            padding: 20px;
+            padding: 30px;
+            line-height: 1.6;
         }
     </style>
 </head>
@@ -85,7 +106,7 @@
 
 <header>
     <h1>PROIECT TIPSTER</h1>
-    <p>Analize și Bilete Zilnice</p>
+    <p>Analize și Strategii Sportive</p>
 </header>
 
 <div class="container">
@@ -94,21 +115,31 @@
             <span class="bet-tag">BILETUL ZILEI</span>
             <span class="date">4 Februarie 2026</span>
         </div>
+        
+        <span class="section-title">Acțiunile zilei:</span>
 
-        <div class="match-row">
-            <div class="match-name">Evenimentele de pe bilet</div>
-            <div class="prediction">Vezi selecția completă mai jos</div>
-        </div>
+        <a href="https://superbet.onelink.me/8IRb/r2g4anft" target="_blank" class="btn btn-superbet">
+            <span class="emoji">🚀</span> VEZI BILETUL PE SUPERBET
+        </a>
 
-        <a href="https://superbet.onelink.me/8IRb/r2g4anft" target="_blank" class="btn-superbet">
-            DESCHIDE BILETUL PE SUPERBET
+        <a href="https://superbet.onelink.me/8IRb/ps3nawfq" target="_blank" class="btn btn-profile">
+            <span class="emoji">👤</span> URMĂREȘTE PROFILUL MEU
+        </a>
+    </div>
+
+    <div class="bet-card" style="border-top-color: #0088cc;">
+        <span class="section-title">Comunitate & Live-uri</span>
+        <p style="color: #666; font-size: 14px;">Alătură-te grupului pentru a primi notificări când postez bilete noi sau ponturi în timp real.</p>
+        
+        <a href="AICI_PUI_LINK_TELEGRAM" target="_blank" class="btn btn-telegram">
+            <span class="emoji">📱</span> INTRĂ PE GRUPUL DE TELEGRAM
         </a>
     </div>
 </div>
 
 <footer>
-    <p>Jucați responsabil. Pariurile sunt doar pentru divertisment.</p>
-    <p>&copy; 2026 Top Tipster - Găzduit pe GitHub</p>
+    <p>🔞 Jucați responsabil. Pariurile sunt o formă de divertisment, nu o sursă sigură de venit.</p>
+    <p>&copy; 2026 Proiect Tipster - GitHub Pages</p>
 </footer>
 
 </body>
