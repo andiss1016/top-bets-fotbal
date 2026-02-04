@@ -172,6 +172,48 @@
             <p style="font-size: 12px; color: #777;">Această analiză este pur informativă și reprezintă opinia tipsterului.</p>
         </div>
     </div>
+    <div class="bet-card" style="border-top-color: #28a745;">
+    <span class="section-title">Analiza de Azi</span>
+    
+    <button onclick="toggleAnalysis()" id="btnAnalysis" class="btn" style="background-color: #28a745; color: white; width: 100%; border: none; cursor: pointer;">
+        <span class="emoji">📊</span> VEZI ANALIZA DETALIATĂ
+    </button>
+
+    <div id="analysisContent" style="display: none; margin-top: 20px; text-align: left; border-top: 1px solid #eee; pt: 15px;">
+        <h3 style="color: #333;">Farul Constanța vs. Dinamo București</h3>
+        
+        <p><strong>Forma Echipelor:</strong></p>
+        <ul style="font-size: 14px; color: #555; padding-left: 20px;">
+            <li><strong>Farul:</strong> Formă excelentă (4-1 cu Craiova, 1-0 cu Petrolul, 1-1 cu Hermannstadt).</li>
+            <li><strong>Dinamo:</strong> Formă remarcabilă, neînvinsă (victorii cu Hermannstadt și U Cluj, egal cu Petrolul).</li>
+        </ul>
+
+        <p><strong>Situația în Clasament:</strong></p>
+        <p style="font-size: 14px; color: #555;">Dinamo ocupă <strong>locul 3</strong> (45 pct), în timp ce Farul este pe <strong>locul 10</strong> (34 pct), având nevoie disperată de puncte.</p>
+
+        <p><strong>Concluzie:</strong></p>
+        <p style="font-size: 14px; color: #555;">Duel între atacul lui Hagi și cea mai solidă defensivă a campionatului (Dinamo - doar 20 goluri primite).</p>
+
+        <div style="background: #f8f9fa; padding: 10px; border-radius: 8px; border-left: 4px solid #28a745;">
+            <p style="margin: 5px 0;"><strong>🎯 Pronostic 1:</strong> GG (Ambele Marchează) - <b>Cotă 1.80</b></p>
+            <p style="margin: 5px 0;"><strong>🎯 Pronostic 2:</strong> X2 (Egal sau Dinamo) - <b>Cotă 1.28</b></p>
+        </div>
+    </div>
+</div>
+
+<script>
+function toggleAnalysis() {
+    var x = document.getElementById("analysisContent");
+    var btn = document.getElementById("btnAnalysis");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+        btn.innerHTML = "<span class='emoji'>🔼</span> ASCUNDE ANALIZA";
+    } else {
+        x.style.display = "none";
+        btn.innerHTML = "<span class='emoji'>📊</span> VEZI ANALIZA DETALIATĂ";
+    }
+}
+</script>
     <div class="bet-card" style="border-top-color: #0088cc;">
         <span class="section-title">Comunitate</span>
         <p style="color: #666; font-size: 14px;">Alătură-te grupului pentru a primi notificări când postez bilete noi sau ponturi în timp real.</p>
